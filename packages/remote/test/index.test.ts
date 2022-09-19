@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest';
-import _fetch from '@vercel/fetch';
 import {
   ArtifactExistsRequest,
   ArtifactGetRequest,

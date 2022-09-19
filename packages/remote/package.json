@@ -38,7 +38,6 @@
     "vitest": "^0.3.2"
   },
   "dependencies": {
-    "@vercel/fetch": "^6.1.1",
     "ci-info": "^3.4.0",
     "concat-stream": "^2.0.0",
     "node-fetch": "^2.6.7",

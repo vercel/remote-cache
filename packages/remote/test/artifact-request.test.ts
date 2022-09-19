@@ -2,7 +2,6 @@ import { createServer } from 'http';
 import { PassThrough, Readable } from 'stream';
 import assert from 'assert';
 import { afterEach, describe, expect, it } from 'vitest';
-import _fetch from '@vercel/fetch';
 import getRawBody from 'raw-body';
 import listen from 'async-listen';
 import {
@@ -72,21 +71,6 @@ describe('ArtifactGetRequest', () => {
     const address = (await listen(server)) as URL;
     const get = new ArtifactGetRequest('token', address.href, 'user-agent');
     await expect(get.buffer()).rejects.toThrow('Not authorized');
-  });
-
-  it('buffer() throws error on mismatch content length', async () => {
-    const data = Buffer.from('hello world');
-    server = createServer((req: IncomingMessage, res) => {
-      getRawBody(req, () => {
-        res.statusCode = 200;
-        res.setHeader('Content-Length', 2);
-        res.end(data);
-      });
-    });
-
-    const address = (await listen(server)) as URL;
-    const get = new ArtifactGetRequest('token', address.href, 'user-agent');
-    await expect(get.buffer()).rejects.toThrow('Mismatched content length');
   });
 });
 
