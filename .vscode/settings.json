@@ -1,0 +1,10 @@
+{
+  "eslint.alwaysShowStatus": true,
+  "eslint.debug": true,
+  "eslint.workingDirectories": [
+    "packages/remote",
+    "packages/remote-nx",
+    "packages/remote-rush",
+    "packages/tsconfig",
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Rush remote cache on Vercel",
+  "extends": "tsconfig/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": ["**/*.ts", "**/*.ts"]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@vercel/remote-rush",
+  "version": "0.0.12",
+  "description": "Remote caching for Rush using Vercel Remote Cache",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vercel/remote-cache.git"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "rush-plugin-manifest.json"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MPL-2.0",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc -p tsconfig.json --emitDeclarationOnly false --noEmit",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean:build": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@microsoft/rush-lib": "latest",
+    "tsconfig": "workspace:^",
+    "typescript": "4.6.4"
+  },
+  "dependencies": {
+    "@rushstack/node-core-library": "latest",
+    "@rushstack/rush-sdk": "latest",
+    "@vercel/remote": "workspace:^",
+    "https-proxy-agent": "~5.0.0"
+  }
+}
