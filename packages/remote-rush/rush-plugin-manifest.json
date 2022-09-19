@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush-plugin-manifest.schema.json",
+  "plugins": [
+    {
+      "pluginName": "rush-vercel-remote-cache-plugin",
+      "description": "Rush plugin for Vercel Remote cache",
+      "entryPoint": "dist/index.js",
+      "optionsSchema": "lib/vercel-remote-cache-config.schema.json"
+    }
+  ]
+}

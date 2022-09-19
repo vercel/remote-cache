@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Configuration for Vercel Remote Cache",
+  "type": "object",
+  "properties": {
+    "teamId": {
+      "type": "string",
+      "description": "The Vercel Team ID that should share remote cache artifacts. Leaving this empty will upload artifacts under your personal account. When deploying your app on Vercel this value is ignored and the Team ID on the Vercel deployment will be used."
+    }
+  }
+}
