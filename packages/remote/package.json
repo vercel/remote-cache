@@ -1,0 +1,47 @@
+{
+  "name": "@vercel/remote",
+  "version": "0.0.9",
+  "description": "An SDK for remote artifact caching on Vercel",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean:build": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vercel/remote-cache.git"
+  },
+  "keywords": [],
+  "author": "Jared Palmer",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/vercel/remote-cache/issues"
+  },
+  "homepage": "https://github.com/vercel/remote-cache#readme",
+  "devDependencies": {
+    "@types/concat-stream": "^2.0.0",
+    "@types/node": "12.20.24",
+    "@types/node-fetch": "^2.6.2",
+    "@types/raw-body": "^2.3.0",
+    "async-listen": "^2.0.2",
+    "esbuild": "^0.14.21",
+    "msw": "^0.36.8",
+    "tsconfig": "workspace:^",
+    "vitest": "^0.3.2"
+  },
+  "dependencies": {
+    "@vercel/fetch": "^6.1.1",
+    "ci-info": "^3.4.0",
+    "concat-stream": "^2.0.0",
+    "node-fetch": "^2.6.7",
+    "raw-body": "^2.5.1"
+  }
+}

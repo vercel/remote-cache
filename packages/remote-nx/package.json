@@ -1,0 +1,43 @@
+{
+  "name": "@vercel/remote-nx",
+  "version": "0.0.9",
+  "description": "Remote caching for @nrwl/nx using Vercel Remote Cache",
+  "license": "MPL-2.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --emitDeclarationOnly false --noEmit",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean:build": "rm -rf dist"
+  },
+  "keywords": [
+    "vercel",
+    "nx",
+    "remote",
+    "cache",
+    "remotecache",
+    "blob",
+    "storage",
+    "typescript"
+  ],
+  "author": "Vercel",
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@nrwl/workspace": "^14.1.9",
+    "@types/yargs": "^16.0.1",
+    "tsconfig": "workspace:^",
+    "typescript": "4.6.4",
+    "vitest": "^0.3.2"
+  },
+  "dependencies": {
+    "@vercel/remote": "workspace:^",
+    "chalk": "^4.1.0",
+    "nx-remotecache-custom": "^2.0.0"
+  }
+}
