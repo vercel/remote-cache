@@ -1,6 +1,6 @@
 {
   "name": "@vercel/remote-rush",
-  "version": "0.0.12",
+  "version": "1.0.0",
   "description": "Remote caching for Rush using Vercel Remote Cache",
   "repository": {
     "type": "git",
