@@ -1,9 +1,9 @@
 import { Readable } from 'stream';
-import vercelFetch from '@vercel/fetch';
+import fetch from 'node-fetch';
 import getRawBody from 'raw-body';
 import ci from 'ci-info';
 import { streamToBuffer } from './utils/stream-to-buffer';
-import type { Fetch, Response, HeaderInit } from '@vercel/fetch';
+import type { Response, HeadersInit } from 'node-fetch';
 
 export interface ArtifactOptions {
   duration?: number;
@@ -11,7 +11,6 @@ export interface ArtifactOptions {
 }
 
 class ArtifactBaseRequest {
-  protected fetch: Fetch;
   protected readonly token: string;
   protected readonly url: string;
   protected readonly options?: ArtifactOptions;
@@ -25,7 +24,6 @@ class ArtifactBaseRequest {
     options?: ArtifactOptions,
   ) {
     this.url = url;
-    this.fetch = vercelFetch();
     this.token = token;
     this.userAgent = userAgent;
     this.options = options;
@@ -35,7 +33,7 @@ class ArtifactBaseRequest {
     method: 'GET' | 'HEAD' | 'PUT',
     options?: ArtifactOptions,
   ) {
-    const headers: HeaderInit = {
+    const headers: HeadersInit = {
       Authorization: `Bearer ${this.token}`,
       'User-Agent': this.userAgent,
     };
@@ -60,7 +58,7 @@ export class ArtifactPutRequest extends ArtifactBaseRequest {
   async stream(artifact: Readable): Promise<void> {
     // TODO: can we use getRawBody here?
     const body = await streamToBuffer(artifact);
-    const res = await this.fetch(this.url, {
+    const res = await fetch(this.url, {
       method: 'PUT',
       headers: this.getHeaders('PUT', this.options),
       body,
@@ -73,7 +71,7 @@ export class ArtifactPutRequest extends ArtifactBaseRequest {
   }
 
   async buffer(artifact: Buffer): Promise<void> {
-    const res = await this.fetch(this.url, {
+    const res = await fetch(this.url, {
       method: 'PUT',
       headers: this.getHeaders('PUT', this.options),
       body: artifact,
@@ -88,7 +86,7 @@ export class ArtifactPutRequest extends ArtifactBaseRequest {
 
 export class ArtifactGetRequest extends ArtifactBaseRequest {
   async stream(): Promise<Readable> {
-    const res = await this.fetch(this.url, {
+    const res = await fetch(this.url, {
       method: 'GET',
       headers: this.getHeaders('GET'),
     });
@@ -105,7 +103,7 @@ export class ArtifactGetRequest extends ArtifactBaseRequest {
   }
 
   async buffer(): Promise<Buffer> {
-    const res = await this.fetch(this.url, {
+    const res = await fetch(this.url, {
       method: 'GET',
       headers: this.getHeaders('GET'),
     });
@@ -129,7 +127,7 @@ export class ArtifactGetRequest extends ArtifactBaseRequest {
 
 export class ArtifactExistsRequest extends ArtifactBaseRequest {
   async send() {
-    const res = await this.fetch(this.url, {
+    const res = await fetch(this.url, {
       method: 'HEAD',
       headers: this.getHeaders('HEAD'),
     });
