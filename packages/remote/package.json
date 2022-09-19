@@ -1,6 +1,6 @@
 {
   "name": "@vercel/remote",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "An SDK for remote artifact caching on Vercel",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
