@@ -13,9 +13,9 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@vercel/remote-nx"
+      "runner": "@vercel/remote-nx",
        "options": {
-          "cacheableOperations": ["build"],
+          "cacheableOperations": ["build"]
         }
     }
   },
