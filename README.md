@@ -1,7 +1,8 @@
 <p align="center">
-  <img width="60%" alt="@vercel/remote-cache" src="https://user-images.githubusercontent.com/2933988/191344061-bfedd250-adf7-49bc-a402-734f2c50a1d6.png#gh-dark-mode-only">
-  <img width="60%" alt="@vercel/remote-cache" src="https://user-images.githubusercontent.com/2933988/191344035-63060355-7ae5-4d02-a921-23c039b87860.png#gh-light-mode-only">
+  <img width="60%" alt="@vercel/remote-cache" src="https://user-images.githubusercontent.com/2933988/191345216-e16244e0-f9ae-45bc-abe8-1942031d2b2a.png#gh-dark-mode-only">
+  <img width="60%" alt="@vercel/remote-cache" src="https://user-images.githubusercontent.com/2933988/191345252-678e203e-3810-4501-b7e5-b6230cad89de.png#gh-light-mode-only">
 </p>
+
 
 <p align="center">
   <a aria-label="Vercel logo" href="https://vercel.com">
