@@ -1,6 +1,6 @@
 <p align="center">
-  <img width="50%" alt="@vercel/remote-cache" src="https://user-images.githubusercontent.com/2933988/190291540-cf44a858-52d5-422b-b638-a94d7c65bb96.png#gh-dark-mode-only">
-    <img width="50%" alt="@vercel/remote-cache" src="https://user-images.githubusercontent.com/2933988/190724611-0e69dc89-ae6d-4fa9-be60-a30e72df80b0.png#gh-light-mode-only">
+  <img width="60%" alt="@vercel/remote-cache" src="https://user-images.githubusercontent.com/2933988/191344061-bfedd250-adf7-49bc-a402-734f2c50a1d6.png#gh-dark-mode-only">
+  <img width="60%" alt="@vercel/remote-cache" src="https://user-images.githubusercontent.com/2933988/191344035-63060355-7ae5-4d02-a921-23c039b87860.png#gh-light-mode-only">
 </p>
 
 <p align="center">
