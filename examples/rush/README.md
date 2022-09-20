@@ -22,7 +22,7 @@ You can choose from one of the following methods to use this repository:
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/remote-cache/tree/main/examples/rush&project-name=rush-monorepo-with-vercel-cache&root-directory=apps%2Fmy-app&build-command=node%20..%2F..%2Fcommon%2Fscripts%2Finstall-run-rush.js%20build&install-command=node%20..%2F..%2Fcommon%2Fscripts%2Finstall-run-rush.js%20install&repository-name=rush-monorepo)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/remote-cache/tree/main/examples/rush&project-name=rush-monorepo-with-vercel-cache&root-directory=apps%2Fmy-app&build-command=node%20..%2F..%2Fcommon%2Fscripts%2Finstall-run-rush.js%20build&install-command=node%20..%2F..%2Fcommon%2Fscripts%2Finstall-run-rush.js%20update-autoinstaller%20--name%20rush-plugins%20%26%26%20node%20..%2F..%2Fcommon%2Fscripts%2Finstall-run-rush.js%20update%20%26%26%20node%20..%2F..%2Fcommon%2Fscripts%2Finstall-run-rush.js%20install&repository-name=rush-monorepo)
 
 
 ### Start Locally
