@@ -1,4 +1,4 @@
-import { describe, expect, it, afterEach, vi, spyOn } from 'vitest';
+import { describe, expect, it, afterEach, vi } from 'vitest';
 import * as exports from '@vercel/remote';
 import { getVercelRemoteCacheClient } from '../src/remote-client';
 import type { VercelRemoteCacheOptions } from '../src/remote-client';
@@ -42,13 +42,13 @@ describe('remote-client', () => {
     expect(() => getVercelRemoteCacheClient(options)).not.toThrowError();
   });
 
-  it('overrides param token and team with NX_ env vars', async () => {
+  it('overrides param token and team with NX_ env vars', () => {
     const options: VercelRemoteCacheOptions = {
       token: 'token_unused',
       teamId: 'team_id_unused',
       lifeCycle: {},
     };
-    const spy = spyOn(exports, 'createClient');
+    const spy = vi.spyOn(exports, 'createClient');
     // eslint-disable-next-line turbo/no-undeclared-env-vars
     process.env.NX_VERCEL_REMOTE_CACHE_TOKEN = 'token_nv_env';
     // eslint-disable-next-line turbo/no-undeclared-env-vars
@@ -60,13 +60,13 @@ describe('remote-client', () => {
     });
   });
 
-  it('VERCEL_ARTIFACTS_* env overrides all', async () => {
+  it('VERCEL_ARTIFACTS_* env overrides all', () => {
     const options: VercelRemoteCacheOptions = {
       token: 'token_unused',
       teamId: 'team_id_unused',
       lifeCycle: {},
     };
-    const spy = spyOn(exports, 'createClient');
+    const spy = vi.spyOn(exports, 'createClient');
     // eslint-disable-next-line turbo/no-undeclared-env-vars
     process.env.NX_VERCEL_REMOTE_CACHE_TOKEN = 'token_nv_env';
     // eslint-disable-next-line turbo/no-undeclared-env-vars
