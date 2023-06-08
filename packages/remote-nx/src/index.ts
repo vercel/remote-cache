@@ -1,7 +1,7 @@
 import { createCustomRunner } from 'nx-remotecache-custom';
 import { setupSDK } from './setup-sdk';
 import type { VercelRemoteCacheOptions } from './remote-client';
-import type defaultTasksRunner from '@nrwl/workspace/tasks-runners/default';
+import type defaultTasksRunner from '@nx/workspace/tasks-runners/default';
 
 declare type DefaultTasksRunner = typeof defaultTasksRunner;
 
