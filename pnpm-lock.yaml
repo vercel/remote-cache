@@ -93,11 +93,11 @@ importers:
   packages/remote-nx:
     dependencies:
       '@vercel/remote':
-        specifier: workspace:^1.0.1
+        specifier: workspace:^
         version: link:../remote
       chalk:
-        specifier: ^5.2.0
-        version: 5.2.0
+        specifier: ^4.1.0
+        version: 4.1.1
       nx-remotecache-custom:
         specifier: ^4.0.0
         version: 4.0.0(@nx/workspace@16.3.2)
@@ -2600,7 +2600,6 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-    dev: true
 
   /chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2608,11 +2607,6 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-
-  /chalk@5.2.0:
-    resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-    dev: false
 
   /character-entities-legacy@1.1.4:
     resolution: {integrity: sha512-3Xnr+7ZFS1uxeiUDvV02wQ+QDbc55o97tIV5zHScSPJpcLm/r0DFPcoY3tYRp+VZukxuMeKgXYmsXQHO05zQeA==}
@@ -5957,7 +5951,7 @@ packages:
       pkg-dir: 5.0.0
       preferred-pm: 3.0.3
       rc-config-loader: 4.1.2
-      semver: 7.3.4
+      semver: 7.5.1
       semver-diff: 3.1.1
       strip-ansi: 6.0.1
       text-table: 0.2.0

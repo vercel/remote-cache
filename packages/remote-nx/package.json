@@ -36,8 +36,8 @@
     "vitest": "^0.32.0"
   },
   "dependencies": {
-    "@vercel/remote": "workspace:^1.0.1",
-    "chalk": "^5.2.0",
+    "@vercel/remote": "workspace:^",
+    "chalk": "^4.1.0",
     "nx-remotecache-custom": "^4.0.0"
   }
 }

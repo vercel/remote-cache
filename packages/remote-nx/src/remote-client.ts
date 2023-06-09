@@ -1,6 +1,6 @@
 import events from 'events';
 import { createClient } from '@vercel/remote';
-import gray from 'chalk';
+import { gray } from 'chalk';
 import type { CustomRunnerOptions } from 'nx-remotecache-custom';
 
 export type VercelRemoteCacheOptions = CustomRunnerOptions<{
