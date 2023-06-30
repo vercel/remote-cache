@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@rushstack/node-core-library": "latest",
-    "@rushstack/rush-sdk": "latest",
+    "@rushstack/rush-sdk": "5.78.0",
     "@vercel/remote": "workspace:^",
     "https-proxy-agent": "~5.0.0"
   }

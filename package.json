@@ -25,16 +25,16 @@
     "@changesets/cli": "^2.24.4",
     "@types/node": "12.20.24",
     "@typescript-eslint/parser": "^5.36.1",
-    "@vercel/style-guide": "latest",
+    "@vercel/style-guide": "4.0.2",
     "doctoc": "^2.2.0",
-    "eslint": "^8.12.0",
+    "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-turbo": "latest",
     "prettier": "latest",
     "tsconfig": "workspace:^",
     "tsup": "^5.11.11",
     "turbo": "latest",
-    "typescript": "4.6.4"
+    "typescript": "^4.8.0"
   },
   "engines": {
     "npm": ">=7.0.0",
