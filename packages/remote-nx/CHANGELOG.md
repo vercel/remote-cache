@@ -1,5 +1,13 @@
 # @vercel/remote-nx
 
+## 1.1.1
+
+### Patch Changes
+
+- 2735967: @vercel/remote-nx uses latest version of nx (16.x)
+
+  Kudos @nicu-chiciuc @TimoBechtel
+
 ## 1.0.1
 
 ### Patch Changes
