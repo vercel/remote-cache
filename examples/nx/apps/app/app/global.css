@@ -140,13 +140,6 @@ pre {
   color: rgba(255, 255, 255, 1);
   width: 66.666667%;
 }
-#middle-content {
-  align-items: flex-start;
-  display: grid;
-  gap: 4rem;
-  grid-template-columns: 1fr;
-  margin-top: 3.5rem;
-}
 #learning-materials {
   padding: 2.5rem 2rem;
 }
@@ -273,6 +266,53 @@ pre {
 #nx-repo svg {
   color: rgba(24, 23, 23, 1);
 }
+#nx-cloud {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 2.5rem 2rem;
+}
+#nx-cloud > div {
+  align-items: center;
+  display: flex;
+}
+#nx-cloud > div svg {
+  border-radius: 0.375rem;
+  flex-shrink: 0;
+  width: 3rem;
+}
+#nx-cloud > div h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#nx-cloud > div h2 span {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+}
+#nx-cloud p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+#nx-cloud pre {
+  margin-top: 1rem;
+}
+#nx-cloud a {
+  color: rgba(107, 114, 128, 1);
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 1.5rem;
+  text-align: right;
+}
+#nx-cloud a:hover {
+  text-decoration: underline;
+}
 #commands {
   padding: 2.5rem 2rem;
   margin-top: 3.5rem;
@@ -346,8 +386,5 @@ summary svg {
   }
   #hero .logo-container {
     display: flex;
-  }
-  #middle-content {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

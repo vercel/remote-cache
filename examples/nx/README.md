@@ -11,11 +11,6 @@ This is a monorepo example using [Nx](https://nx.dev) with a single [Next.js](ht
   - [Start Locally](#start-locally)
     - [Development server](#development-server)
     - [Build](#build)
-    - [Running unit tests](#running-unit-tests)
-- [Code scaffolding](#code-scaffolding)
-  - [Generate a new component](#generate-a-new-component)
-  - [Generate an application](#generate-an-application)
-  - [Generate a library](#generate-a-library)
 - [Further help](#further-help)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -61,37 +56,6 @@ npx nx build app
 ```
 The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-#### Running unit tests
-
-```bash
-npx nx test app
-```
-Execute the unit tests via [Jest](https://jestjs.io).
-
-```bash
-npx nx affected:test
-```
-Execute the unit tests affected by a change.
-
-## Code scaffolding
-
-### Generate a new component
-
-```bash
-npx nx g @nrwl/react:component my-component --project=app
-```
-
-### Generate an application
-
-```bash
-npx nx g @nrwl/react:app new-app
-``` 
-
-### Generate a library
-
-```bash
-npx nx g @nrwl/react:lib my-lib
-```
 
 ## Further help
 
