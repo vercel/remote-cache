@@ -1,6 +1,6 @@
 {
   "extends": [
-    "plugin:@nrwl/nx/react-typescript",
+    "plugin:@nx/react-typescript",
     "next",
     "next/core-web-vitals",
     "../../.eslintrc.json"
@@ -12,8 +12,19 @@
       "rules": {
         "@next/next/no-html-link-for-pages": ["error", "apps/app/pages"]
       }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
     }
   ],
+  "rules": {
+    "@next/next/no-html-link-for-pages": "off"
+  },
   "env": {
     "jest": true
   }
