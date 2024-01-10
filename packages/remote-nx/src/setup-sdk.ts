@@ -30,8 +30,6 @@ function totalDuration(tasks: Pick<Task, 'endTime' | 'startTime'>[]) {
     }
   }
 
-  console.log('total duration', total);
-
   return total;
 }
 
