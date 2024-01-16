@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
+        node-version: [16.x, 18.x, 20.x]
 
     steps:
       - name: Checkout
@@ -31,7 +31,7 @@ jobs:
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 7
+          version: 8
           run_install: false
       - name: Get pnpm store directory
         id: pnpm-cache
