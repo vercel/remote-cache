@@ -37,9 +37,9 @@
     "typescript": "^4.8.0"
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=15.0.0"
+    "pnpm": ">=8.0.0",
+    "node": ">=18.0.0"
   },
   "prettier": "@vercel/style-guide/prettier",
-  "packageManager": "pnpm@7.11.0"
+  "packageManager": "pnpm@8.11.0"
 }
