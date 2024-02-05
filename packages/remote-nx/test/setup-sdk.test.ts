@@ -16,7 +16,7 @@ describe('sdk', () => {
       lifeCycle: {},
     };
 
-    const client = await setupSDK(options);
+    const client = await setupSDK(options, []);
     expect(client).toBeDefined();
   });
 
@@ -27,7 +27,7 @@ describe('sdk', () => {
       lifeCycle: {},
     };
 
-    const client = await setupSDK(options);
+    const client = await setupSDK(options, []);
     expect(client.fileExists).toBeInstanceOf(Function);
     expect(client.retrieveFile).toBeInstanceOf(Function);
     expect(client.storeFile).toBeInstanceOf(Function);
@@ -40,7 +40,7 @@ describe('sdk', () => {
       lifeCycle: {},
     };
 
-    await expect(setupSDK(options)).rejects.toThrowError(
+    await expect(setupSDK(options, [])).rejects.toThrowError(
       'Missing a Vercel access token',
     );
   });
@@ -52,6 +52,6 @@ describe('sdk', () => {
     };
     // eslint-disable-next-line turbo/no-undeclared-env-vars
     process.env.NX_VERCEL_REMOTE_CACHE_TOKEN = 'token';
-    await expect(setupSDK(options)).resolves.toBeDefined();
+    await expect(setupSDK(options, [])).resolves.toBeDefined();
   });
 });

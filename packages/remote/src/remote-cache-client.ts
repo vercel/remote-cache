@@ -15,7 +15,7 @@ export interface RemoteClientOptions {
 export interface RemoteClient {
   exists: (hash: string) => ArtifactExistsRequest;
   get: (hash: string) => ArtifactGetRequest;
-  put: (hash: string) => ArtifactPutRequest;
+  put: (hash: string, options?: ArtifactOptions) => ArtifactPutRequest;
 }
 
 export class RemoteClientImpl implements RemoteClient {
