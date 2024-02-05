@@ -1,6 +1,6 @@
 {
   "name": "@vercel/remote-nx",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Remote caching for @nrwl/nx using Vercel Remote Cache",
   "license": "MPL-2.0",
   "main": "dist/index.js",
