@@ -4,6 +4,9 @@
 
 This project implements a task runner for [@nrwl/nx](https://nx.dev) that caches build artifacts in the Vercel Remote Cache.
 
+> [!WARNING]  
+> As of Nx version 19.8+ may need to pay a license fee to Nx to continue using Vercel Remote Cache.
+
 > [!TIP]
 > Vercel Remote Cache is now free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
 
@@ -11,10 +14,12 @@ This project implements a task runner for [@nrwl/nx](https://nx.dev) that caches
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Setup](#setup)
-- [Usage](#usage)
-- [Run it 🚀](#run-it-)
-- [Advanced Configuration](#advanced-configuration)
+- [@vercel/remote-nx](#vercelremote-nx)
+  - [Table of Contents](#table-of-contents)
+  - [Setup](#setup)
+  - [Usage](#usage)
+  - [Run it 🚀](#run-it-)
+  - [Advanced Configuration](#advanced-configuration)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
