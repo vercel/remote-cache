@@ -13,18 +13,16 @@ The Vercel Remote Caching SDK is a thin layer over our existing API can be added
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Vercel Remote Caching SDK](#vercel-remote-caching-sdk)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Getting Started](#getting-started)
-    - [Authentication](#authentication)
-    - [Using buffers](#using-buffers)
-    - [Using streams](#using-streams)
-  - [Creating a Remote Cache Client](#creating-a-remote-cache-client)
-    - [Checking artifact exists](#checking-artifact-exists)
-    - [Retrieve artifact](#retrieve-artifact)
-    - [Store artifact](#store-artifact)
-    - [Errors](#errors)
+- [Installation](#installation)
+- [Getting Started](#getting-started)
+  - [Authentication](#authentication)
+  - [Using buffers](#using-buffers)
+  - [Using streams](#using-streams)
+- [Creating a Remote Cache Client](#creating-a-remote-cache-client)
+  - [Checking artifact exists](#checking-artifact-exists)
+  - [Retrieve artifact](#retrieve-artifact)
+  - [Store artifact](#store-artifact)
+  - [Errors](#errors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -11,18 +11,16 @@ This is a [Rush](https://rushjs.io/) plugin for using Vercel Remote Cache provid
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [@vercel/remote-rush](#vercelremote-rush)
-  - [Table of Contents](#table-of-contents)
-  - [Setting up a new Rush monorepo with Vercel Remote Cache](#setting-up-a-new-rush-monorepo-with-vercel-remote-cache)
-    - [Setup Rush monorepo](#setup-rush-monorepo)
-  - [Add caching](#add-caching)
-  - [Add remote caching with Vercel](#add-remote-caching-with-vercel)
-    - [Download and install the @vercel/remote-rush plugin](#download-and-install-the-vercelremote-rush-plugin)
-    - [Configuring token for the Remote Cache](#configuring-token-for-the-remote-cache)
-      - [Using Environment Variables](#using-environment-variables)
-      - [Using Rush user store](#using-rush-user-store)
-      - [Authenticating during a Vercel Build](#authenticating-during-a-vercel-build)
-    - [Finally](#finally)
+- [Setting up a new Rush monorepo with Vercel Remote Cache](#setting-up-a-new-rush-monorepo-with-vercel-remote-cache)
+  - [Setup Rush monorepo](#setup-rush-monorepo)
+- [Add caching](#add-caching)
+- [Add remote caching with Vercel](#add-remote-caching-with-vercel)
+  - [Download and install the @vercel/remote-rush plugin](#download-and-install-the-vercelremote-rush-plugin)
+  - [Configuring token for the Remote Cache](#configuring-token-for-the-remote-cache)
+    - [Using Environment Variables](#using-environment-variables)
+    - [Using Rush user store](#using-rush-user-store)
+    - [Authenticating during a Vercel Build](#authenticating-during-a-vercel-build)
+  - [Finally](#finally)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

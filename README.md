@@ -23,12 +23,10 @@ An SDK for Remote Caching on [Vercel](https://vercel.com).
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Vercel Remote Cache SDK](#vercel-remote-cache-sdk)
-  - [Table of Contents](#table-of-contents)
-  - [Summary](#summary)
-  - [Examples](#examples)
-  - [Packages](#packages)
-  - [Contributing](#contributing)
+- [Summary](#summary)
+- [Examples](#examples)
+- [Packages](#packages)
+- [Contributing](#contributing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
