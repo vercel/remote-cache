@@ -3,7 +3,6 @@
   <img width="60%" alt="@vercel/remote-cache" src="https://user-images.githubusercontent.com/2933988/191345252-678e203e-3810-4501-b7e5-b6230cad89de.png#gh-light-mode-only">
 </p>
 
-
 <p align="center">
   <a aria-label="Vercel logo" href="https://vercel.com">
     <img src="https://img.shields.io/badge/MADE%20BY%20Vercel-000000.svg?style=for-the-badge&logo=vercel&labelColor=000000&logoWidth=20">
@@ -14,16 +13,22 @@
 
 [![Node CI](https://github.com/vercel/remote-cache/actions/workflows/ci.yml/badge.svg)](https://github.com/vercel/remote-cache/actions/workflows/ci.yml)
 
-An SDK for Remote Caching on [Vercel](https://vercel.com)
+An SDK for Remote Caching on [Vercel](https://vercel.com).
+
+> [!TIP]
+> Vercel Remote Cache is now free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
 
 ## Table of Contents
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Summary](#summary)
-- [Examples](#examples)
-- [Packages](#packages)
-- [Contributing](#contributing)
+- [Vercel Remote Cache SDK](#vercel-remote-cache-sdk)
+  - [Table of Contents](#table-of-contents)
+  - [Summary](#summary)
+  - [Examples](#examples)
+  - [Packages](#packages)
+  - [Contributing](#contributing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -45,10 +50,10 @@ Build systems and tools that integrate with Vercel Remote Caching.
 
 ## Packages
 
-| Name                                         | Description                                              | Package                                                              |
-| -------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------- |
-| [@vercel/remote](packages/remote/)           | An SDK for remote artifact caching on Vercel             | [![@vercel/remote](https://img.shields.io/npm/v/@vercel/remote)](https://npmjs.org/@vercel/remote)           |
-| [@vercel/remote-nx](packages/remote-nx/)     | Remote caching plugin for Nx using Vercel Remote Cache   | [![@vercel/remote-nx](https://img.shields.io/npm/v/@vercel/remote-nx)](https://npmjs.org/@vercel/remote-nx)     |
+| Name                                         | Description                                              | Package                                                                                                           |
+| -------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| [@vercel/remote](packages/remote/)           | An SDK for remote artifact caching on Vercel             | [![@vercel/remote](https://img.shields.io/npm/v/@vercel/remote)](https://npmjs.org/@vercel/remote)                |
+| [@vercel/remote-nx](packages/remote-nx/)     | Remote caching plugin for Nx using Vercel Remote Cache   | [![@vercel/remote-nx](https://img.shields.io/npm/v/@vercel/remote-nx)](https://npmjs.org/@vercel/remote-nx)       |
 | [@vercel/remote-rush](packages/remote-rush/) | Remote caching plugin for Rush using Vercel Remote Cache | [![@vercel/remote-rush](https://img.shields.io/npm/v/@vercel/remote-rush)](https://npmjs.org/@vercel/remote-rush) |
 
 ## Contributing
