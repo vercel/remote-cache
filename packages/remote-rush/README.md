@@ -4,6 +4,9 @@
 
 This is a [Rush](https://rushjs.io/) plugin for using Vercel Remote Cache provider during the "build" and "rebuild" command.
 
+> [!TIP]
+> Vercel Remote Cache is now free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+
 ## Table of Contents
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
