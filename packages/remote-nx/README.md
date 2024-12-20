@@ -14,12 +14,10 @@ This project implements a task runner for [@nrwl/nx](https://nx.dev) that caches
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [@vercel/remote-nx](#vercelremote-nx)
-  - [Table of Contents](#table-of-contents)
-  - [Setup](#setup)
-  - [Usage](#usage)
-  - [Run it 🚀](#run-it-)
-  - [Advanced Configuration](#advanced-configuration)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Run it 🚀](#run-it-)
+- [Advanced Configuration](#advanced-configuration)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
