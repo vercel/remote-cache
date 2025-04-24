@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "6.7.1",
+  "pnpmVersion": ">=8.0.0",
 
   // "npmVersion": "6.14.15",
   // "yarnVersion": "1.9.4",
@@ -124,7 +124,7 @@
    * LTS schedule: https://nodejs.org/en/about/releases/
    * LTS versions: https://nodejs.org/en/download/releases/
    */
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0 || >=16.13.0 <17.0.0",
+  "nodeSupportedVersionRange": ">=18.0.0",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -214,9 +214,9 @@
     "reviewCategories": [
       // Some example categories:
       "production", // projects that ship to production
-      "tools",      // non-shipping projects that are part of the developer toolchain
-      "prototypes"  // experiments that should mostly be ignored by the review process
-    ],
+      "tools", // non-shipping projects that are part of the developer toolchain
+      "prototypes" // experiments that should mostly be ignored by the review process
+    ]
 
     /**
      * A list of NPM package scopes that will be excluded from review.
@@ -291,13 +291,11 @@
      * to retrieve the latest activity for the remote main branch.
      */
     // "url": "https://github.com/microsoft/rush-example",
-
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "main"
      */
     // "defaultBranch": "main",
-
     /**
      * The default remote. This tells "rush change" which remote to compare against if the remote URL is
      * not set or if a remote matching the provided remote URL is not found.
@@ -355,7 +353,7 @@
     //    * The folder name for this variant.
     //    */
     //   "variantName": "old-sdk",
-    // 
+    //
     //   /**
     //    * An informative description
     //    */
@@ -381,10 +379,10 @@
   // "hotfixChangeEnabled": false,
 
   /**
-    * This is an optional, but recommended, list of available tags that can be applied
-    * to projects. If this property is not specified, any tag is allowed. This
-    * list is useful in preventing typos when specifying tags for projects.
-    */
+   * This is an optional, but recommended, list of available tags that can be applied
+   * to projects. If this property is not specified, any tag is allowed. This
+   * list is useful in preventing typos when specifying tags for projects.
+   */
   // "allowedProjectTags": [ "apps", "Web", "tools" ],
 
   /**
@@ -471,10 +469,10 @@
       // "versionPolicyName": "",
 
       /**
-        * An optional set of custom tags that can be used to select this project. For example,
-        * adding "my-custom-tag" will allow this project to be selected by the
-        * command "rush list --only tag:my-custom-tag"
-        */
+       * An optional set of custom tags that can be used to select this project. For example,
+       * adding "my-custom-tag" will allow this project to be selected by the
+       * command "rush list --only tag:my-custom-tag"
+       */
       "tags": ["apps", "web", "next"]
     }
   ]
